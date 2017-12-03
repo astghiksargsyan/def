@@ -1,0 +1,81 @@
+<div id="wrapper">
+    <div class="row">
+        <div class="small-2 medium-4 large-4 columns left-part">
+
+            <p class="font-class"> Start game </p>
+            <div> After You learned conditions You must click on "start" button or on card</div>
+
+            <div id="mainCardImageDiv">
+                <img src="image/card/main.jpg" alt="card" class="cardsProperties">
+            </div>
+            <div id="startButtonDiv">
+                <input type="button" value="start" id="startButton" ng-click="showFunc()">
+            </div>
+        </div>
+
+        <div class="small-10 medium-8 large-8 columns right-part">
+            <div class="font-class instruction" ng-show="showInterpretation">
+                <h2> Ուշադիր կարդացեք </h2>
+                <p> Սա աշխարհի ճշգրիտ գուշաություններից մեկն է </p>
+                <p> Այն ցույց կտա Ձեզ Ձեր ապագան </p>
+                <p> Գուշակություն շատ հետաքրքր ու հեշտ կլինի </p>
+                <p> Մտացեք Ձեր երազանքի մասին և ձևակերպեք հարցը </p>
+                <p> Ամենավերջին և կարևոր կետը՝ Դուք պիտի հավատաք և վայելեք պրոցսը </p>
+            </div>
+            <div class="row cardIMG">
+                <div class="firstCardsRow" ng-show="cardBlock">
+                    <img src="image/card/main.jpg" alt="korol1" class="cardsProperties top" id="l1">
+                    <img src="image/card/main.jpg" alt="korol1" class="cardsProperties top" id="l2">
+                    <img src="image/card/main.jpg" alt="korol1" class="cardsProperties top" id="l3">
+                    <img src="image/card/main.jpg" alt="korol1" class="cardsProperties top" id="l4">
+                    <img src="image/card/main.jpg" alt="korol1" class="cardsProperties top" id="l5">
+                    <img src="image/card/main.jpg" alt="korol1" class="cardsProperties top" id="l6">
+                    <img src="image/card/main.jpg" alt="korol1" class="cardsProperties top" id="l7">
+                    <img src="image/card/main.jpg" alt="korol1" class="cardsProperties top" id="l8">
+                </div>
+
+                <!--<div class="row">
+                    <img src="image/cards/mainCardImage.png" alt="korol1" class="cardsProperties" id="l9" >
+                    <img src="image/cards/mainCardImage.png" alt="korol1" class="cardsProperties" id="l10" >
+                    <img src="image/cards/mainCardImage.png" alt="korol1" class="cardsProperties" id="l11" >
+                    <img src="image/cards/mainCardImage.png" alt="korol1" class="cardsProperties" id="l12" >
+                    <img src="image/cards/mainCardImage.png" alt="korol1" class="cardsProperties" id="l13" >
+                    <img src="image/cards/mainCardImage.png" alt="korol1" class="cardsProperties" id="l14" >
+                    <img src="image/cards/mainCardImage.png" alt="korol1" class="cardsProperties" id="l15" >
+                    <img src="image/cards/mainCardImage.png" alt="korol1" class="cardsProperties" id="l16" >
+                </div>
+                 <div class="row">
+                    <img src="image/cards/mainCardImage.png" alt="korol1" class="cardsProperties" id="l17" >
+                    <img src="image/cards/mainCardImage.png" alt="korol1" class="cardsProperties" id="l18" >
+                    <img src="image/cards/mainCardImage.png" alt="korol1" class="cardsProperties" id="l19" >
+                    <img src="image/cards/mainCardImage.png" alt="korol1" class="cardsProperties" id="l20" >
+                    <img src="image/cards/mainCardImage.png" alt="korol1" class="cardsProperties" id="l21" >
+                    <img src="image/cards/mainCardImage.png" alt="korol1" class="cardsProperties" id="l22" >
+                    <img src="image/cards/mainCardImage.png" alt="korol1" class="cardsProperties" id="l23" >
+                </div> -->
+                <div class="show-interpretation" id="show-interpretation" ng-show="cardBlock" ng-click="costumChose()">
+                    <input type="button" value="Show">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <img src="image/line.png" alt="line">
+    </div>
+    <div class="row" id="chooseCard">
+        <div class="small-1 medium-4 large-4 columns">
+            <!-- <div class="div-for-image" id="test1"></div> -->
+            <img ng-src="{{myImgUrl1}}"/>
+        </div>
+        <div class="small-1 medium-4 large-4 columns">
+            <img ng-src="{{myImgUrl2}}"/>
+        </div>
+        <div class="small-1 medium-4 large-4 columns">
+            <img ng-src="{{myImgUrl3}}"/>
+        </div>
+    </div>
+    <div class="row font-class" id="descriptionText">
+        {{pressitionText}}
+    </div>
+
+</div>
