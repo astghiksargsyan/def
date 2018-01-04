@@ -1,12 +1,27 @@
 * {
   margin: 0 auto;
   padding: 0;
+     font-family: 'MonotypeCorsiva';
 
 }
 
+body{
+   
+     font-family: 'MonotypeCorsiva';
+}
+@font-face {
+    font-family: 'MonotypeCorsiva';
+    src: url('fonts/MonotypeCorsiva.eot');
+    src: url('fonts/MonotypeCorsiva.eot') format('embedded-opentype'),
+         url('fonts/MonotypeCorsiva.woff2') format('woff2'),
+         url('fonts/MonotypeCorsiva.woff') format('woff'),
+         url('fonts/MonotypeCorsiva.ttf') format('truetype'),
+         url('fonts/MonotypeCorsiva.svg#MonotypeCorsiva') format('svg');
+}
+
 .main {
-  background-image: url("../image/bgn.png");
-  background-size: 100%;
+/*  background-image: url("../image/bg-new1.png");*/
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -25,13 +40,13 @@
 }
 
 .h1 {
+    font-family: 'MonotypeCorsiva';
   font-size: 80px;
   font-weight: bold;
 }
 
 .costum-menu {
   font-size: 40px;
-  font-family: Monotype Corsiva, Arial;
   align-self: flex-end;
 }
 
@@ -49,16 +64,22 @@
   height: 90px;
 }
 .costume-button {
-  padding-top: 26px;
-  width: 194px;
-  height: 108px;
-  background-image: url(../image/bg-button.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  cursor: pointer;
-  font-size: 41px;
+ padding-top: 26px;
+    width: 194px;
+    height: 108px;
+    background-image: url(../image/bg-button.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    font-size: 41px;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    margin: 0 auto;
 }
-
+#show-interpretation{
+ 
+}
 
 /*aside article*/
 .right-part {
@@ -73,7 +94,7 @@
 .cardsProperties {
   width: 160px;
   height: 248px;
-  border: 3px solid #dacfcf;
+  border: 3px solid #e2cd8e;
 }
 
 .div-for-image {
@@ -90,10 +111,11 @@
   height: 362px;
 }
 .cardIMG{
-  display: flex;
-  height: 450px;
-  flex-direction: column;
-  border: 1px solid red;
+
+        height: 700px;
+    width: 100%;
+    display: flex;
+    position: relative
 }
 
 
@@ -111,15 +133,11 @@
 /* for del*/
 .firstCardsRow {
   /*position: absolute;*/
-
   top: 25px;
-
 }
 
 .secondCardsRow {
-  position: absolute;
-  top: 75px;
-  z-index: 1;
+  top: 75px; 
 }
 
 .thirdCardsRow {
@@ -128,63 +146,111 @@
   z-index: 1;
 }
 
-.firstClassRow, .secondClassRow, .thirdClassRow {
+.firstClassRow, .secondClassRow {
   height: 500px;
   padding: 25px;
 }
 
 .top {
   position: absolute;
-  top: 455px;
+  top: 25px;
+  z-index: 1;
+}
+.topSecondRow {
+  position: absolute;
+  top: 315px;
   z-index: 1;
 }
 
-#l1 {
-  left: 750px;
+#l1,#ls1 {
+  left: 5%;
 }
 
-#l2 {
-  left: 785px;
+#l2,#ls2 {
+  left: 8%;
 }
 
-#l3 {
-  left: 820px;
+#l3,#ls3 {
+  left: 11%;
 }
 
-#l4 {
-  left: 855px;
+#l4,#ls4 {
+  left: 14%;
 }
 
-#l5 {
-  left: 890px;
+#l5,#ls5 {
+  left: 17%;
 }
 
-#l6 {
-  left: 925px;
+#l6,#ls6 {
+  left: 20%;
 }
 
-#l7 {
-  left: 960px;
+#l7,#ls7 {
+  left: 23%;
 }
 
-#l8 {
-  left: 995px;
+#l8,#ls8 {
+  left: 26%;
 }
-img.top{
+#l9,#ls9 {
+  left: 29%;
+}
+
+#l10,#ls10 {
+  left: 32%;
+}
+
+#l11,#ls11 {
+  left: 35%;
+}
+
+#l12,#ls12 {
+  left: 38%;
+}
+
+#l13,#ls13 {
+  left: 41%;
+}
+
+#l14,#ls14 {
+  left: 44%;
+}
+
+#l15,#ls15 {
+  left: 47%;
+}
+
+#l16,#ls16 {
+  left: 50%;
+}
+#l17,#ls17 {
+  left: 53%;
+}
+
+#l18,#ls18 {
+  left: 57%;
+}
+
+img.top, img.topSecondRow{
 	transition: all .3s ease;
 }
 img.top:hover {
-    top: 440px;
+    top: 10px;
+  border: 3px solid aliceblue;
+}
+img.topSecondRow:hover {
+    top: 300px;
   border: 3px solid aliceblue;
 }
 .font-class {
-  font-family: Monotype Corsiva, Arial;
+
   color: #b16316;
   text-align: center
 }
 
 .font-class > h2, .instruction > h2 {
-  font-family: Monotype Corsiva, Arial;
+
   font-size: 70px;
 }
 
