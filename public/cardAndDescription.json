@@ -1,0 +1,39 @@
+[
+  {
+    "card1": "image/card/finaldesign/1.png",
+    "card2": "image/card/finaldesign/15.png",
+    "card3": "image/card/finaldesign/36.png",
+    "description1": " Даря своей любимой букет из ромашек, пересчитайте все лепестки. Должно быть: любит!",
+  },
+    {
+    "card1": "image/card/finaldesign/11.png",
+    "card2": "image/card/finaldesign/2.png",
+    "card3": "image/card/finaldesign/35.png",
+    "description1": " Появится вдруг у тебя новый друг",
+  }, 
+    {
+    "card1": "image/card/finaldesign/3.png",
+    "card2": "image/card/finaldesign/21.png",
+    "card3": "image/card/finaldesign/31.png",
+    "description1": " Будет у тебя всегда в доме вкусная еда",
+  },
+    {
+    "card1": "image/card/finaldesign/4.png",
+    "card2": "image/card/finaldesign/20.png",
+    "card3": "image/card/finaldesign/30.png",
+    "description1": " Жди, не плача, придет к тебе удача",
+  }, 
+    {
+    "card1": "image/card/finaldesign/5.png",
+    "card2": "image/card/finaldesign/22.png",
+    "card3": "image/card/finaldesign/10.png",
+    "description1": " Ждет тебя вскоре поездка на море",
+  },
+    {
+    "card1": "image/card/finaldesign/6.png",
+    "card2": "image/card/finaldesign/25.png",
+    "card3": "image/card/finaldesign/17.png",
+    "description1": "Ожидая плохого события, не крутите пуговицу: она обязательно оторвется",
+  },
+  
+]

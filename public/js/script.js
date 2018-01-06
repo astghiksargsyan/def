@@ -52,9 +52,22 @@ function costumChose(){
 
 var showInterpretation = document.getElementById("show-interpretation");
 showInterpretation.addEventListener("click", costumChose);
-
-
-
-
-
 */
+$(document).ready(function () {
+    $(".hidev").click(function () {
+        var i = 0;
+        while(i < 3){
+            $(".hidev").addClass("selected");
+            var numItems = $('.selected').length;
+            console.log(numItems);
+            i++;
+            //$(this).hide();
+            if (numItems <= 3) {
+                $(this).hide();
+                console.log(numItems);
+            }
+        }
+
+        // console.log("sdsad");
+    });
+});

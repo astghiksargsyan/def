@@ -21,6 +21,8 @@ body{
 
 .main {
 /*  background-image: url("../image/bg-new1.png");*/
+/* background-image: url("../image/bg8.png");*/
+ background-color: #f5ddb3; 
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -31,6 +33,7 @@ body{
 
 .header {
   /* background-image: url(../image/header3.jpg)
+    background-image: url(../image/headerbg.gif);
    background-repeat: no-repeat;
    background-position-x: center;
    background-size: 100%;;*/
@@ -51,8 +54,7 @@ body{
 }
 
 .costum-menu > .menu > li > a {
-  color: #b16316;
-  !important
+  color: #b16316 !important;
 }
 
 .costum-menu > .menu > li > a:hover {
@@ -64,7 +66,7 @@ body{
   height: 90px;
 }
 .costume-button {
- padding-top: 26px;
+    padding-top: 26px;
     width: 194px;
     height: 108px;
     background-image: url(../image/bg-button.png);
@@ -72,13 +74,10 @@ body{
     background-size: 100%;
     cursor: pointer;
     font-size: 41px;
-    position: absolute;
-    bottom: 0;
-    left: 40%;
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: 40%; */
     margin: 0 auto;
-}
-#show-interpretation{
- 
 }
 
 /*aside article*/
@@ -92,10 +91,12 @@ body{
 }
 
 .cardsProperties {
-  width: 160px;
-  height: 248px;
-  border: 3px solid #e2cd8e;
+  width: 200px;
+  height: auto;
+  border: 3px solid #f5ddb3;
+border-radius: 0 71px 0 40px;
 }
+
 
 .div-for-image {
   width: 200px;
@@ -137,19 +138,15 @@ body{
 }
 
 .secondCardsRow {
-  top: 75px; 
+  top: 100px; 
 }
 
-.thirdCardsRow {
-  position: absolute;
-  top: 135px;
-  z-index: 1;
-}
-
+/*
 .firstClassRow, .secondClassRow {
   height: 500px;
   padding: 25px;
 }
+*/
 
 .top {
   position: absolute;
@@ -158,10 +155,21 @@ body{
 }
 .topSecondRow {
   position: absolute;
-  top: 315px;
+  top: 370px;
   z-index: 1;
 }
 
+img.top:hover {
+    top: 5px;
+  border: 3px solid aliceblue;
+}
+img.topSecondRow:hover {
+    top: 350px;
+  border: 3px solid aliceblue;
+}
+img.top, img.topSecondRow{
+	transition: all .3s ease;
+}
 #l1,#ls1 {
   left: 5%;
 }
@@ -229,20 +237,10 @@ body{
 }
 
 #l18,#ls18 {
-  left: 57%;
+  left: 56%;
 }
 
-img.top, img.topSecondRow{
-	transition: all .3s ease;
-}
-img.top:hover {
-    top: 10px;
-  border: 3px solid aliceblue;
-}
-img.topSecondRow:hover {
-    top: 300px;
-  border: 3px solid aliceblue;
-}
+
 .font-class {
 
   color: #b16316;

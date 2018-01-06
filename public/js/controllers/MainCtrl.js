@@ -5,17 +5,25 @@ angular.module('MainCtrl', []).controller('MainController', function($scope) {
         $scope.cardBlock = true;
         $scope.showInterpretation = false;
     };
-    $scope.taroCardsArray = ["image/card/0.jpg", "image/card/1.jpg", "image/card/2.jpg",
-        "image/card/3.jpg", "image/card/4.jpg", "image/card/5.jpg", "image/card/6.jpg", "image/card/7.jpg", "image/card/8.jpg",
-        "image/card/9.jpg", "image/card/10.jpg", "image/card/11.jpg", "image/card/12.jpg", "image/card/13.jpg", "image/card/14.jpg",
-        "image/card/15.jpg", "image/card/16.jpg", "image/card/18.jpg", "image/card/19.jpg", "image/card/20.jpg",
-        "image/card/21.jpg", "image/card/22.jpg", "image/card/23.jpg", "image/card/24.jpg", "image/card/25.jpg", "image/card/26.jpg",
-        "image/card/27.jpg", "image/card/28.jpg", "image/card/29.jpg", "image/card/30.jpg", "image/card/31.jpg", "image/card/32.jpg",
-        "image/card/33.jpg", "image/card/34.jpg", "image/card/35.jpg","image/card/36.jpg", "image/1.png", "image/2.png", "image/3.png",
-         "image/4.png"];
+    $scope.cardsShowHide = function(){
+        $scope.hideCard = true;
+        $scope.showCard = true;
+    }
+    $scope.taroCardsArray = ["image/card/finaldesign/1.png", "image/card/finaldesign/2.png", "image/card/finaldesign/3.png",
+        "image/card/finaldesign/4.png", "image/card/finaldesign/5.png", "image/card/finaldesign/6.png",
+        "image/card/finaldesign/7.png", "image/card/finaldesign/8.png", "image/card/finaldesign/9.png",
+        "image/card/finaldesign/10.png", "image/card/finaldesign/11.png", "image/card/finaldesign/12.png",
+        "image/card/finaldesign/13.png", "image/card/finaldesign/14.png", "image/card/finaldesign/15.png",
+        "image/card/finaldesign/16.png", "image/card/finaldesign/17.png", "image/card/finaldesign/18.png",
+        "image/card/finaldesign/19.png", "image/card/finaldesign/20.png", "image/card/finaldesign/21.png",
+        "image/card/finaldesign/22.png", "image/card/finaldesign/23.png", "image/card/finaldesign/24.png", 
+        "image/card/finaldesign/25.png", "image/card/finaldesign/26.png", "image/card/finaldesign/27.png",
+        "image/card/finaldesign/28.png", "image/card/finaldesign/29.png", "image/card/finaldesign/30.png",
+        "image/card/finaldesign/31.png", "image/card/finaldesign/32.png", "image/card/finaldesign/33.png",
+        "image/card/finaldesign/34.png", "image/card/finaldesign/35.png", "image/card/finaldesign/36.png"];
 
 
-    console.log( $scope.taroCardsArray.length);
+   // console.log( $scope.taroCardsArray.length);
     $scope.prediction = [" Даря своей любимой букет из ромашек, пересчитайте все лепестки. Должно быть: любит! ",
         "Появится вдруг у тебя новый друг", "Будет у тебя всегда в доме вкусная еда", " Жди, не плача, придет к тебе удача",
         "Ждет тебя вскоре поездка на море", "Ожидая плохого события, не крутите пуговицу: она обязательно оторвется"
