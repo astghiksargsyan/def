@@ -66,9 +66,15 @@ var cardsArray = ["image/card/finaldesign/1.png", "image/card/finaldesign/2.png"
         "image/card/finaldesign/28.png", "image/card/finaldesign/29.png", "image/card/finaldesign/30.png",
         "image/card/finaldesign/31.png", "image/card/finaldesign/32.png", "image/card/finaldesign/33.png",
         "image/card/finaldesign/34.png", "image/card/finaldesign/35.png", "image/card/finaldesign/36.png"];
-var prediction = [" Даря своей любимой букет из ромашек, пересчитайте все лепестки. Должно быть: любит! ",
-        "Появится вдруг у тебя новый друг", "Будет у тебя всегда в доме вкусная еда", " Жди, не плача, придет к тебе удача",
-        "Ждет тебя вскоре поездка на море", "Ожидая плохого события, не крутите пуговицу: она обязательно оторвется"
+//var prediction = [" Даря своей любимой букет из ромашек, пересчитайте все лепестки. Должно быть: любит! ",
+//        "Появится вдруг у тебя новый друг", "Будет у тебя всегда в доме вкусная еда", " Жди, не плача, придет к тебе удача",
+//        "Ждет тебя вскоре поездка на море", "Ожидая плохого события, не крутите пуговицу: она обязательно оторвется"
+//    ];
+var prediction = [" Give person fish, he eat for day. Teach person to fish, he always smell funny. ",
+        " Look before you leap. Or wear parachute.", "The end is near, might as well have dessert.",
+        "Of all 27 alternatives, running away is best.", "Closed mouth gathers no feet.", "On keyboard of life, always keep one finger on escape key.", " Indecision is key to flexibility.", " Some days you are pigeon, some days you are statue. Today, bring umbrella. ",
+        "Your reality check about to bounce.", " Wise person never try to get even. Wise person get odder.",
+        "Stop eating now. Food poisoning no fun."
     ];
 
 $(document).ready(function () {
