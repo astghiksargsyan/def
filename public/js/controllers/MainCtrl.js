@@ -24,14 +24,14 @@ angular.module('MainCtrl', []).controller('MainController', function($scope) {
 
 
    // console.log( $scope.taroCardsArray.length);
-    $scope.prediction = [" Даря своей любимой букет из ромашек, пересчитайте все лепестки. Должно быть: любит! ",
-        "Появится вдруг у тебя новый друг", "Будет у тебя всегда в доме вкусная еда", " Жди, не плача, придет к тебе удача",
-        "Ждет тебя вскоре поездка на море", "Ожидая плохого события, не крутите пуговицу: она обязательно оторвется"
-    ];
-    $scope.costumChose = function () {
-        $scope.myImgUrl1 =  $scope.taroCardsArray[(Math.random()*$scope.taroCardsArray.length)|0];
-        $scope.myImgUrl2 =  $scope.taroCardsArray[(Math.random()*$scope.taroCardsArray.length)|0];
-        $scope.myImgUrl3 =  $scope.taroCardsArray[(Math.random()*$scope.taroCardsArray.length)|0];
-        $scope.pressitionText = $scope.prediction[(Math.random()*$scope.prediction.length)|0];
-    }
+//    $scope.prediction = [" Даря своей любимой букет из ромашек, пересчитайте все лепестки. Должно быть: любит! ",
+//        "Появится вдруг у тебя новый друг", "Будет у тебя всегда в доме вкусная еда", " Жди, не плача, придет к тебе удача",
+//        "Ждет тебя вскоре поездка на море", "Ожидая плохого события, не крутите пуговицу: она обязательно оторвется"
+//    ];
+//    $scope.costumChose = function () {
+//        $scope.myImgUrl1 =  $scope.taroCardsArray[(Math.random()*$scope.taroCardsArray.length)|0];
+//        $scope.myImgUrl2 =  $scope.taroCardsArray[(Math.random()*$scope.taroCardsArray.length)|0];
+//        $scope.myImgUrl3 =  $scope.taroCardsArray[(Math.random()*$scope.taroCardsArray.length)|0];
+//        $scope.pressitionText = $scope.prediction[(Math.random()*$scope.prediction.length)|0];
+//    }
 });

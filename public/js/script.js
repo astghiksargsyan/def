@@ -53,21 +53,63 @@ function costumChose(){
 var showInterpretation = document.getElementById("show-interpretation");
 showInterpretation.addEventListener("click", costumChose);
 */
-$(document).ready(function () {
-    $(".hidev").click(function () {
-        var i = 0;
-        while(i < 3){
-            $(".hidev").addClass("selected");
-            var numItems = $('.selected').length;
-            console.log(numItems);
-            i++;
-            //$(this).hide();
-            if (numItems <= 3) {
-                $(this).hide();
-                console.log(numItems);
-            }
-        }
 
-        // console.log("sdsad");
+var cardsArray = ["image/card/finaldesign/1.png", "image/card/finaldesign/2.png", "image/card/finaldesign/3.png",
+        "image/card/finaldesign/4.png", "image/card/finaldesign/5.png", "image/card/finaldesign/6.png",
+        "image/card/finaldesign/7.png", "image/card/finaldesign/8.png", "image/card/finaldesign/9.png",
+        "image/card/finaldesign/10.png", "image/card/finaldesign/11.png", "image/card/finaldesign/12.png",
+        "image/card/finaldesign/13.png", "image/card/finaldesign/14.png", "image/card/finaldesign/15.png",
+        "image/card/finaldesign/16.png", "image/card/finaldesign/17.png", "image/card/finaldesign/18.png",
+        "image/card/finaldesign/19.png", "image/card/finaldesign/20.png", "image/card/finaldesign/21.png",
+        "image/card/finaldesign/22.png", "image/card/finaldesign/23.png", "image/card/finaldesign/24.png", 
+        "image/card/finaldesign/25.png", "image/card/finaldesign/26.png", "image/card/finaldesign/27.png",
+        "image/card/finaldesign/28.png", "image/card/finaldesign/29.png", "image/card/finaldesign/30.png",
+        "image/card/finaldesign/31.png", "image/card/finaldesign/32.png", "image/card/finaldesign/33.png",
+        "image/card/finaldesign/34.png", "image/card/finaldesign/35.png", "image/card/finaldesign/36.png"];
+var prediction = [" Даря своей любимой букет из ромашек, пересчитайте все лепестки. Должно быть: любит! ",
+        "Появится вдруг у тебя новый друг", "Будет у тебя всегда в доме вкусная еда", " Жди, не плача, придет к тебе удача",
+        "Ждет тебя вскоре поездка на море", "Ожидая плохого события, не крутите пуговицу: она обязательно оторвется"
+    ];
+
+$(document).ready(function () {
+    var selecteCount = 0;
+    $(".hidev").click(function () {
+        if (selecteCount < 3) {
+            $(this).addClass("selected");
+            selecteCount++;
+            $(this).hide();
+            if (selecteCount == 3) {
+                $('#test1').append('<img src="image/card/imgbg.png" width="200px" id="removeCard1">');
+                $('#test2').append('<img src="image/card/imgbg.png" width="200px" id="removeCard2">');
+                $('#test3').append('<img src="image/card/imgbg.png" width="200px" id="removeCard3">');
+            }
+        } else {
+            alert("stop");
+        }
     });
-});
+    $("#show-interpretation").click(function () {
+            var randomNumber1 = Math.floor(Math.random() * cardsArray.length) | 0;
+            var randomNumber2 = Math.floor(Math.random() * cardsArray.length) | 0;
+            var randomNumber3 = Math.floor(Math.random() * cardsArray.length) | 0;
+            var pred = Math.floor(Math.random() * prediction.length) | 0;
+            $('#removeCard1').hide();
+            $('#removeCard2').hide();
+            $('#removeCard3').hide();
+            $("#test1i").attr("src", cardsArray[randomNumber1]);
+            $("#test2i").attr("src", cardsArray[randomNumber2]);
+            $("#test3i").attr("src", cardsArray[randomNumber3]);
+            $("#descriptionText").html(prediction[pred]);;
+        
+        });
+
+    });
+/*$(document).ready(function () {
+     $("#show-interpretation").click(function(){
+        $('#removeCard1').hide();
+        $('#removeCard2').hide();
+        $('#removeCard3').hide();
+       $("#test1i").attr("src", taroCardsArray[randomNumber1]);
+       $("#test2i").attr("src", taroCardsArray[randomNumber2]);
+       $("#test3i").attr("src", taroCardsArray[randomNumber3]);
+   });
+});*/
