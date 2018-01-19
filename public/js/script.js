@@ -76,7 +76,10 @@ var prediction = [" Give person fish, he eat for day. Teach person to fish, he a
         "Your reality check about to bounce.", " Wise person never try to get even. Wise person get odder.",
         "Stop eating now. Food poisoning no fun."
     ];
-
+ var randomNumber1 = Math.floor(Math.random() * cardsArray.length) | 0;
+            var randomNumber2 = Math.floor(Math.random() * cardsArray.length) | 0;
+            var randomNumber3 = Math.floor(Math.random() * cardsArray.length) | 0;
+            var pred = Math.floor(Math.random() * prediction.length) | 0;
 $(document).ready(function () {
     var selecteCount = 0;
     $(".hidev").click(function () {
@@ -85,19 +88,17 @@ $(document).ready(function () {
             selecteCount++;
             $(this).hide();
             if (selecteCount == 3) {
-                $('#test1').append('<img src="image/card/imgbg.png" width="200px" id="removeCard1">');
-                $('#test2').append('<img src="image/card/imgbg.png" width="200px" id="removeCard2">');
-                $('#test3').append('<img src="image/card/imgbg.png" width="200px" id="removeCard3">');
+
+                $('#test1').append('<img src="image/card/imgbg.png" width="100px" id="removeCard1">');
+                $('#test2').append('<img src="image/card/imgbg.png" width="100px" id="removeCard2">');
+                $('#test3').append('<img src="image/card/imgbg.png" width="100px" id="removeCard3">');
             }
         } else {
             alert("stop");
         }
     });
     $("#show-interpretation").click(function () {
-            var randomNumber1 = Math.floor(Math.random() * cardsArray.length) | 0;
-            var randomNumber2 = Math.floor(Math.random() * cardsArray.length) | 0;
-            var randomNumber3 = Math.floor(Math.random() * cardsArray.length) | 0;
-            var pred = Math.floor(Math.random() * prediction.length) | 0;
+           
             $('#removeCard1').hide();
             $('#removeCard2').hide();
             $('#removeCard3').hide();
@@ -105,7 +106,7 @@ $(document).ready(function () {
             $("#test2i").attr("src", cardsArray[randomNumber2]);
             $("#test3i").attr("src", cardsArray[randomNumber3]);
             $("#descriptionText").html(prediction[pred]);;
-        
+        console.log("sadasd")
         });
 
     });

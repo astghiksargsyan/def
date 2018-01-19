@@ -26,7 +26,9 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+.delborder{
+    border: 1px solid red;
+}
 .container{
   padding-top: 18px;
 }
@@ -91,10 +93,10 @@ body{
 }
 
 .cardsProperties {
-  width: 200px;
+  width:100px;
   height: auto;
   border: 3px solid #f5ddb3;
-border-radius: 0 71px 0 40px;
+border-radius: 0 38px 0 40px;
 }
 
 
@@ -121,9 +123,15 @@ border-radius: 0 71px 0 40px;
 
 
 #chooseCard {
-  padding: 85px;
+    display: flex;
+    justify-content: space-between;
 }
-
+#test1, #test2, #test3{
+     width:100px !important;
+}
+#test1>img, #test2>img, #test3>img{
+     width:100px !important;
+}
 #descriptionText {
   height: 130px;
   justify-content: center;
@@ -171,73 +179,73 @@ img.top, img.topSecondRow{
 	transition: all .3s ease;
 }
 #l1,#ls1 {
-  left: 5%;
+  left: 1%;
 }
 
 #l2,#ls2 {
-  left: 8%;
+  left: 3%;
 }
 
 #l3,#ls3 {
-  left: 11%;
+  left: 5%;
 }
 
 #l4,#ls4 {
-  left: 14%;
+  left: 7%;
 }
 
 #l5,#ls5 {
-  left: 17%;
+  left: 9%;
 }
 
 #l6,#ls6 {
-  left: 20%;
+  left: 11%;
 }
 
 #l7,#ls7 {
-  left: 23%;
+  left: 13%;
 }
 
 #l8,#ls8 {
-  left: 26%;
+  left: 15%;
 }
 #l9,#ls9 {
-  left: 29%;
+  left: 17%;
 }
 
 #l10,#ls10 {
-  left: 32%;
+  left: 19%;
 }
 
 #l11,#ls11 {
-  left: 35%;
+  left: 21%;
 }
 
 #l12,#ls12 {
-  left: 38%;
+  left: 23%;
 }
 
 #l13,#ls13 {
-  left: 41%;
+  left: 25%;
 }
 
 #l14,#ls14 {
-  left: 44%;
+  left: 27%;
 }
 
 #l15,#ls15 {
-  left: 47%;
+  left: 29%;
 }
 
 #l16,#ls16 {
-  left: 50%;
+  left: 31%;
 }
 #l17,#ls17 {
-  left: 53%;
+  left: 33%;
 }
 
 #l18,#ls18 {
-  left: 56%;
+  left: 35%;
 }
 
 
@@ -248,7 +256,7 @@ img.top, img.topSecondRow{
 }
 
 .font-class > h2, .instruction > h2 {
-
+ font-family: 'MonotypeCorsiva';
   font-size: 70px;
 }
 
